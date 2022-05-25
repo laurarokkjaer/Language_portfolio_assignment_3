@@ -40,13 +40,11 @@ name; degree; betweenness centrality; eigenvector_centrality
 The goal of this assignment was to demonstrate that I have a good understanding of how to perform network analysis on undirected, weighted edgelists using networkx. By the end of this assignment, I would have a script which can be resued for future projects to perform a quick, simple network analysis
 
 ### Data source
-The data used in this assignment is the in class flowers-folder from UCloud (shared-drive/CDS-VIS/flowers). 
-
-Link to flowers dataset: [flowers dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html).
+The data used in this assignment is the in class folder from UCloud (shared-drive/CDS-VIS/network_data). 
 
 
 ## Methods
-To solve this assignment i have worked with ```opencv``` in order to both calculate the histograms as well as for the general image processing (using the ```calcHist```, ```imread```, ```normalize``` and ```compareHist```). Futhermore i used the ```jimshow``` and ```jimshow_channel``` from the ```utils```-folder, along with the ```matplotlib``` for plotting and visualisation.
+To solve this assignment i have worked with ```argparse``` in order to parse arguments when calling the main function from command line. And as networking tool i used ```networkx```. At last, i used ```matplotlib``` for visualisation.
 
 ## Usage (reproducing results)
 These are the steps you will need to follow in order to get the script running and working:
@@ -57,15 +55,12 @@ These are the steps you will need to follow in order to get the script running a
 
       - cd src (changing the directory to the src folder in order to run the script)
       
-      - python image_search.py (calling the function within the script)
+      - python network_analysis.py -f 1H4.csv (calling the function within the script with and argument of choise)
       
 - when processed, there will be a messagge saying that the script has succeeded and that the outputs can be seen in the output folder 
 
 
 
 ## Discussion of results
-The result of this script is an image which contains one target flower image and the calculated three similar images, as well as the calculated distance scores of the images. Furthermore, a csv file is made with the results (similar images). 
-
-For further development, it could have been interesting to look at how to make the script run with a user defined input. Since this code have already been through a transision from jupiter notebook to .py script, it would not have been much change to do. For the user to parse an argument via the command line when running the code, the script would have been more reproduceble/reuseble, because of the fact that the user wpuld be able to define the target image themselves. 
-
+The results of this assignment is a table for the given file which shows the values of the network analysis shuch as name, degree, betweenness centrality and eigenvector_centrality of the edgelist. The other result is an image of the network showing the different nodes, their connections and the clusters of the network. This script can both be called on a single file (argument: filename) and with a directory (argument: directory), which makes it possible to get network analysis on multiple data at once. 
 
