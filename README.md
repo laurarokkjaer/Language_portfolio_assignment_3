@@ -16,6 +16,8 @@ This repository contains the code and descriptions from the third assigned proje
 
 Also containing a ```MITLICENSE``` for guidelines of how to reproduce and use the data in this repository, as well as a ```.txt``` reqirements-file, where the required installments will be listed.
 
+This assignment was conducted in collaboration with Sofie Kathleen Lloyd Thomsen (201908339), which is why some code may be equivalent to each other.  
+
 ## Assignment description
 The official description of the assignment from github/brightspace: [assignment description](https://github.com/CDS-AU-DK/cds-language/blob/main/assignments/assignment3.md).
 
