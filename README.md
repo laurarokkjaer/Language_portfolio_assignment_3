@@ -57,7 +57,7 @@ These are the steps you will need to follow in order to get the script running a
 
       - cd src (changing the directory to the src folder in order to run the script)
       
-      - python network_analysis.py -f 1H4.csv (calling the function within the script with and argument of choise)
+      - python network_analysis.py -f 1H4.csv (calling the function within the script and with argument of choise)
       
 - when processed, there will be a messagge saying that the script has succeeded and that the outputs can be seen in the output folder 
 
