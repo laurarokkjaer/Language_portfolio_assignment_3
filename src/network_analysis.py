@@ -11,7 +11,7 @@ plt.rcParams["figure.figsize"] = (20,20)
 
 # Get data for single file
 def read_file(filename):
-    filepath = os.path.join("..", "..", "CDS-LANG", "network_data", filename)
+    filepath = os.path.join("input", "network_data", filename)
     data = pd.read_csv(filepath, sep = "\t")
     return data
 
@@ -33,7 +33,7 @@ def join(path):
 
 # The following function takes whatever file is given from the folder 'network_data' and runs a network analysis on it. The outputs of this function is a picture of the network and a dataframe which shows name, degree, betweenness centrality and eigenvector centrality of the network. 
 
-# Giving my function a suitable name with an parameter called file
+# Giving my function a suitable name with parameters
 def network_analysis(data, filename = None):
     if filename is None:
         out_img = "network_analysis.png"
@@ -76,7 +76,7 @@ def network_analysis(data, filename = None):
     network_dframe = pd.DataFrame(list_of_columns, columns = ["Name", "Degree", "Betweenness Centrality", "Eigenvector Centrality"])
     
     # Writing it to a csv
-    network_dframe.to_csv("../output/" + out_file, encoding = "utf-8")
+    network_dframe.to_csv("output/" + out_file, encoding = "utf-8")
     
 def parse_args():
     # Intialise argeparse
