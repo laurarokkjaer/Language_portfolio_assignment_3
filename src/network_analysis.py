@@ -103,7 +103,7 @@ def main():
             data = read_directory(file[1])
             network_analysis(data, file[0])
             
-    print("Script succeeded, results can be seen in output-folder") 
+    print("Script succeeded, results can be seen in output folder") 
     
 if __name__ == "__main__":
     main()
